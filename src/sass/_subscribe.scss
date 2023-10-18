@@ -1,0 +1,206 @@
+.container_subscribe {
+    background-color: #AE1332;
+    width: 375px;
+    margin: auto;
+    padding: 0%;
+}
+
+
+.subscribe {
+
+    &__blocks {
+        width: 100%;
+        height: 100%; 
+        position: relative;
+        display: flex;
+    }
+
+    &__images {
+        left: 32px;
+        top: 89px;
+        position: relative;
+        width: 100%; 
+        height: auto; 
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        gap: 24px; 
+        display: inline-flex;
+        overflow: hidden;
+    }
+
+    &__image1{
+        width: 100%; /* Ancho al 100% para adaptarse al contenedor padre */
+        max-width: 792px; /* Establece un ancho máximo para evitar que la imagen se vuelva demasiado grande */
+        height: auto;
+       border-radius: 20px;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+
+    &__image2 {
+        width: 100%; /* Ancho al 100% para adaptarse al contenedor padre */
+        max-width: 400px; /* Establece un ancho máximo para evitar que la imagen se vuelva demasiado grande */
+        height: auto;
+        border-radius: 20px;
+        background-image: url('../images/fruit.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+
+    &__title {
+        top: -8%;
+        text-align: center;
+        position: absolute;
+        color: white; 
+        font-size: 5.5em; 
+        font-family: DM Sans; 
+        text-transform: uppercase; 
+        line-height: 84px;
+        word-wrap: break-word;
+    }
+
+    &__block{
+        position: relative; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+        gap: 80px; 
+        display: inline-flex; 
+        text-align: center; 
+        display: flex;
+        padding-top: 15px;
+        height: 400px;
+        }
+
+
+    &__text{
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+        gap: 14px; 
+        display: flex;
+    }
+
+
+    &__textOur{
+        width: 492px; 
+        text-align: center; 
+        color: white; 
+        font-size: 14px; 
+        font-family: DM Sans; 
+        font-weight: 400; 
+        line-height: 18px; 
+        word-wrap: break-word;
+        padding-top: 2px;
+        padding-bottom: 10px;
+    }
+
+    &__input{
+        width: 292px; 
+        height: 48px; 
+        position: relative;
+    }
+
+    &__rectangle-email{
+        width: 292px; 
+        height: 50px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        opacity: 0.5; 
+        border-radius: 100px; 
+        border: 1px white solid;
+        padding-bottom: 10px
+    }
+
+    &__button_send {
+        width: 102px;
+        height: 48px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        left: 190px;
+        top: 0px;
+        position: absolute;
+        background: #9DC162;
+        border-radius: 100px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px; display: inline-flex
+    }
+
+    &__send {
+        color: white;
+        font-size: 14px;
+        font-family: DM Sans;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 18px;
+        word-wrap: break-word
+    }
+
+
+    &__enter-email{
+        left: 24px;
+        top: 15px;
+        position: absolute;
+        opacity: 0.80;
+        color: white;
+        font-size: 14px;
+        font-family: DM Sans;
+        font-weight: 400; line-height:
+        18px; word-wrap: break-word
+    }
+
+}
+
+//responsive
+
+/* Estilos para tamaños de pantalla grandes (mayores o iguales a 1280px) */
+@media screen and (min-width: 1280px) {
+    .container_subscribe {
+        background-color: #ae1332;
+        width: 1280px;
+        margin: auto;
+        padding: 0%;
+    }
+
+.subscribe {
+    &__title {
+        top: -8%;
+        text-align: center;
+        position: absolute;
+        color: white; 
+        font-size: 5.5em; 
+        font-family: DM Sans; 
+        text-transform: uppercase; 
+        line-height: 84px;
+        word-wrap: break-word;
+    }
+}
+}
+
+/* Estilos para tamaños de pantalla medianos (entre 768px y 1279px) */
+@media screen and (min-width: 768px) {
+    .container_subscribe {
+        width: 768px;
+        height: 800px;
+        background-color: #ae1332;
+        margin: auto;
+        padding: 0%;
+        width: 100%; /* Ancho al 100% para adaptarse al ancho de la pantalla */
+    }
+
+    .subscribe {
+
+        &__title {
+        top: 0;
+        font-size: 4em;
+        line-height: 64px;
+        }
+    }
+    /* Agregar otros ajustes de estilo para pantallas pequeñas aquí */
+}
